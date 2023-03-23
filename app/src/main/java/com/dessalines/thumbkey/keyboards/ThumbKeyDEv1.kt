@@ -23,14 +23,9 @@ val THUMBKEY_DE_V1_MAIN = KeyboardC(
                     size = FontSizeVariant.LARGE,
                     color = ColorVariant.PRIMARY
                 ),
-                swipes = mapOf(
                     SwipeDirection.BOTTOM_RIGHT to KeyC(
-                        display = KeyDisplay.TextDisplay("o"),
-                        action = KeyAction.CommitText("o")
-                    ),
-                    SwipeDirection.BOTTOM_LEFT to KeyC(
-                        display = KeyDisplay.TextDisplay("ö"),
-                        action = KeyAction.CommitText("ö")
+                        display = KeyDisplay.TextDisplay("c"),
+                        action = KeyAction.CommitText("c")
                     )
                 )
             ),
@@ -134,8 +129,12 @@ val THUMBKEY_DE_V1_MAIN = KeyboardC(
                 ),
                 swipes = mapOf(
                     SwipeDirection.LEFT to KeyC(
-                        display = KeyDisplay.TextDisplay("c"),
-                        action = KeyAction.CommitText("c")
+                        display = KeyDisplay.TextDisplay("o"),
+                        action = KeyAction.CommitText("o")
+                ),
+                    SwipeDirection.RIGHT to KeyC(
+                        display = KeyDisplay.TextDisplay("ö"),
+                        action = KeyAction.CommitText("ö")
                     ),
                     SwipeDirection.TOP to KeyC(
                         display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
@@ -242,12 +241,8 @@ val THUMBKEY_DE_V1_SHIFTED = KeyboardC(
                 ),
                 swipes = mapOf(
                     SwipeDirection.BOTTOM_RIGHT to KeyC(
-                        display = KeyDisplay.TextDisplay("O"),
-                        action = KeyAction.CommitText("O")
-                    ),
-                    SwipeDirection.BOTTOM_LEFT to KeyC(
-                        display = KeyDisplay.TextDisplay("Ö"),
-                        action = KeyAction.CommitText("Ö")
+                        display = KeyDisplay.TextDisplay("C"),
+                        action = KeyAction.CommitText("C")
                     )
                 )
             ),
@@ -351,8 +346,13 @@ val THUMBKEY_DE_V1_SHIFTED = KeyboardC(
                 ),
                 swipes = mapOf(
                     SwipeDirection.LEFT to KeyC(
-                        display = KeyDisplay.TextDisplay("C"),
-                        action = KeyAction.CommitText("C")
+                        display = KeyDisplay.TextDisplay("O"),
+                        action = KeyAction.CommitText("O")
+                ),
+                swipes = mapOf(
+                    SwipeDirection.RIGHT to KeyC(
+                        display = KeyDisplay.TextDisplay("Ö"),
+                        action = KeyAction.CommitText("Ö")
                     ),
                     SwipeDirection.BOTTOM to KeyC(
                         display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
